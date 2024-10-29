@@ -19,7 +19,7 @@ body {
     line-height: 1.5;
     margin: 0;
     background-color:gray;
-    
+    min-height: 100vh
     
 }
 
@@ -52,6 +52,8 @@ a {
 .nav__link {
     position: relative;
     transition: all .2s ease;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    
 }
 
 .nav__link:hover {
@@ -85,11 +87,12 @@ a {
     width: 100%;
     height: 100px;
     transition: background-color 0.3s ease;
+    z-index: 3000;
 }
 
 .header.scroll {
     background-color: rgba(0, 0, 0, 1);
-    z-index: 1000;
+    z-index: 3000;
 }
 
 .header__inner {
@@ -131,6 +134,18 @@ a {
 }
 
 
+.main::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .2s ease;
+    opacity: 0.2;
+    background-color: #f69300;
+}
+
 .carousel slide {
     width: 100%; 
 }
@@ -160,13 +175,15 @@ a {
 
 .main__title {
     display: inline-block;
-    color: #f69300;
+    /*color: #f69300;*/
+    color: white;
     font-size: 70px;
-    background-color: rgba(0, 0, 0, 0.8);
-    text-shadow: 1px 1px 2px red, 0 0 1em #f69300, 0 0 0.2em blue;
-    border: 3px solid black;
-    border-radius: 25px;
+    /*background-color: rgba(0, 0, 0, 0.8);*/
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    /*border: 3px solid black;
+    border-radius: 25px;*/
     padding: 12px;
+    z-index: 1000;
 }
 
 .box-title {
@@ -181,7 +198,7 @@ a {
 
 .section {
     width: 100%;
-    height: 100vh;
+    flex: 1;
     position: relative;
     background-image: url(../img/section_backgroung.jpg);
     background-size: cover;
@@ -202,8 +219,7 @@ a {
 .section__inner {
     display: flex;
     width: 100%;
-
-    
+    margin-bottom: 50px;
 }
 
 .section__slider {
@@ -226,6 +242,7 @@ a {
     margin-left: 20px;
     padding: 20px;
     color: #fff;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
     font-size: 20px;
     z-index: 2;
 }
@@ -240,12 +257,13 @@ a {
     display: flex;
     align-items: center;
     justify-content:space-around;
-    position: fixed;
+    position: relative;
     width: 100%;
     height: 100px;
-    opacity: 0;
+    opacity: 1;
     background-color: rgba(0, 0, 0, 1);
     bottom: 0;
+    
     z-index: 1000;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
@@ -257,11 +275,27 @@ a {
     z-index: 1000;
 }
 
-.address__footer {
-    width: 40px;
-}
-
-.footer-autor h4 {
+.footer__geo h4 {
     color: #fff;
     text-align: center;
+}
+
+.footer__autor {
+    color: #fff;
+    text-align: center;
+    
+   
+}
+
+.address {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.address__link {
+    width: 30px;
+    
 }
