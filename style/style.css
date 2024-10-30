@@ -13,6 +13,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
     font-family: Noto Serif;
     font-size: 15px;
     color: black;
@@ -131,6 +135,8 @@ a {
     height: 100vh;
     display: block;
     width: 100%;
+    position: relative;
+    flex: 1;
 }
 
 
@@ -198,7 +204,7 @@ a {
 
 .section {
     width: 100%;
-    flex: 1;
+    height: 100vh;
     position: relative;
     background-image: url(../img/section_backgroung.jpg);
     background-size: cover;
@@ -219,7 +225,7 @@ a {
 .section__inner {
     display: flex;
     width: 100%;
-    margin-bottom: 50px;
+    padding-top: 80px
 }
 
 .section__slider {
@@ -257,7 +263,7 @@ a {
     display: flex;
     align-items: center;
     justify-content:space-around;
-    position: relative;
+    /*position: absolute;*/
     width: 100%;
     height: 100px;
     opacity: 1;
@@ -299,3 +305,72 @@ a {
     width: 30px;
     
 }
+
+.main-film {
+    width: 100%;
+    height: 100vh;
+}
+
+/*Film-blok*/
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-film {
+    width: 100%;
+    min-height: 900px;
+    position: relative;
+    flex: 1;
+    background-image: url(../img/film_background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.main-film::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .2s ease;
+    opacity: 0.4;
+    background-color: #f69300;
+}
+
+
+.main-film__inner {
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.main-film__item {
+    width: 150px;
+    height: 225px;
+    border: 1px solid black;
+    margin: 30px 20px;
+    position: relative;
+    z-index: 10;
+    transition: all 0.65s ease;
+    box-shadow: 10px 14px 13px black;
+}
+
+
+.film-img {
+    width: 150px;
+    height: 225px; 
+   
+}
+
+
+.main-film__item:hover {
+    transform: translateY(-20px);
+    
+}
+
