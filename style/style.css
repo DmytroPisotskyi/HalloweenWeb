@@ -603,6 +603,7 @@ a {
     background-image: url('https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces/xWT5F1DNxciNLEMXRl49iq8zvN7.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    /*background-position: left calc((50vw - 170px) - 600px) top;*/
 }
 
 .sleepyHollow-bg {
@@ -613,6 +614,7 @@ a {
     background-image: url('https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces/kFk8J6kULJTEol82VKHTlI4zSzb.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    /*background-position: left calc((50vw - 170px) - 600px) top;*/
 }
 
 
@@ -624,6 +626,7 @@ a {
     background-image: url('https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces/ncr6KR7bBF8cps6yZKiTAwClpn1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    /*background-position: left calc((50vw - 170px) - 600px) top;*/
 }
 
 .corpseBride-bg {
@@ -634,6 +637,7 @@ a {
     background-image: url('https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces/v23fWgJUEt8EMmvn19btIacxP8E.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    /*background-position: left calc((50vw - 170px) - 600px) top;*/
 }
 
 
@@ -645,6 +649,7 @@ a {
     background-image: url('https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces/aDnCTWpWMHcQxOeGWsITmoLuEGy.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    /*background-position: left calc((50vw - 170px) - 600px) top;*/
 }
 
 .caroline-bg {
@@ -655,6 +660,7 @@ a {
     background-image: url('https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces/hofnlIyF6bePkgQOpcuRWLvzf15.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    /*background-position: left calc((50vw - 170px) - 600px) top;*/
 }
 
 
@@ -666,6 +672,7 @@ a {
     background-image: url('https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces/tyBkBHKDrJyVUeCs550kMr61jnq.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    /*background-position: left calc((50vw - 170px) - 600px) top;*/
 }
 
 
@@ -677,6 +684,7 @@ a {
     background-image: url('https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces/yRKyJJYIzfeiVDHBe4LXguPQCvD.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    /*background-position: left calc((50vw - 170px) - 600px) top;*/
 }
 
 
@@ -688,6 +696,7 @@ a {
     background-image: url('https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces/obYVvi6eD4rjFeC7g4uoZQPIh7F.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    /*background-position: left calc((50vw - 170px) - 600px) top;*/
 }
 
 
@@ -699,6 +708,7 @@ a {
     background-image: url('https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces/aRka9neADW1M0Zf9lF8kW2jEgXe.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    /*background-position: left calc((50vw - 170px) - 600px) top;*/
 }
 
 
@@ -710,10 +720,8 @@ a {
     background-image: url('https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces/yfTZ2MSRWc06cBrFOsAF4Lebi4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    /*background-position: left calc((50vw - 170px) - 600px) top;*/
 }
-
-
-
 
 /*.section-film {
     flex: 1;
@@ -903,6 +911,12 @@ a {
     overflow: hidden;
 
     transition: all 0.2s ease;
+}
+
+
+.iframe-video {
+    width:1000px; 
+    height: 562px;
 }
 
 
@@ -1167,6 +1181,7 @@ article h2::before {
 .d-block {
     position: relative;
 }
+
 /*=========Media==============*/
 
 
@@ -1193,6 +1208,76 @@ article h2::before {
     .logo_container-footer {
         display: none;
     }
+    .film-intro__inner {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .film-info {
+        width: 100%;
+        margin-top: 50px;
+        /* margin-left: 30px; */
+        z-index: 1;
+        position: relative;
+    }
+    
+    .van-helsing-bg {
+        background-position: left calc((50vw - 170px) - 600px) top;
+    }
+    .theNightmareBefore-bg {
+        background-position: left calc((50vw - 170px) - 1600px) top;
+    }
+    .sleepyHollow-bg {
+        background-position: left calc((50vw - 170px) - 1000px) top;
+    }
+    .hocusPocus-bg {
+        background-position: left calc((50vw - 170px) - 1200px) top;
+    }
+    .caroline-bg {
+        background-position: left calc((50vw - 170px) - 920px) top;
+    }
+    .dracula-bg {
+        background-position: left calc((50vw - 170px) - 1400px) top;
+    }
+    .beetlejuice-bg {
+        background-position: left calc((50vw - 170px) - 1350px) top;
+    }
+    .sweenyTodd-bg {
+        background-position: left calc((50vw - 170px) - 1350px) top;
+    }
+    .halloween-bg {
+        background-position: left calc((50vw - 170px) - 770px) top;
+    }
+    .frankenweenie-bg {
+        background-position: left calc((50vw - 170px) - 300px) top;
+    }
+    .modal__inner {
+        /* width: 100%; */
+        position: relative;
+        left: 50%;
+        margin-left: -200px;
+        margin-top: 50px;
+    }
+    .close-modal {
+        position: absolute;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        background: none;
+        line-height: 45px;
+        left: 349px;
+        overflow: hidden;
+        transition: all 0.2s ease;
+    }
+    .iframe-video {
+        width: 400px; 
+        height: 450px;
+    }
+    
+
   }
 
 
