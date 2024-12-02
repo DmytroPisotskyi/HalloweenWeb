@@ -42,12 +42,39 @@
                             <a href="../HalloweenWeb/about.html" class="nav__link">Про сайт</a>
                         </li>
                     </ul>
+                    <button class="header__button" type="button">
+                        <img src="../HalloweenWeb/img/menu-bar.png" width="65px">
+                    </button>
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <button class="mobile-menu__close" type="button">
+                    <img src="../HalloweenWeb/img/close.png" width="40px">
+                </button>
+                <nav class="mobile-menu__list">
+                    <div >
+                        <a class="mobile-menu__link" href="../HalloweenWeb/film.html">Фільми</a>
+                    </div>
+                    <div >
+                        <a class="mobile-menu__link" href="../HalloweenWeb/dishes.html">Страви</a>
+                    </div>
+                    <div >
+                        <a class="mobile-menu__link" href="../HalloweenWeb/history.html">Історія</a>
+                    </div>
+                    <div >
+                        <a class="mobile-menu__link" href="../HalloweenWeb/about.html">Про сайт</a>
+                    </div>
+                </nav>
+                <div class="mobile-menu__content">
+                    <img src="../HalloweenWeb/img/upFooterImg.gif" width="150px">
+                    <h2>Веселого Хелловіну!</h2>
                 </div>
             </div>
         </header><!--/Header-->
         <div class="wrapper">
             <div class="dishes-main">
                 <div class="container">
+                    <h1 class="content-title" data-aos="zoom-in">Піцца "Примари"</h1>
                     <div class="dishes-content">
                         <img data-aos="fade-right" class="dishes-img-content" src="https://i.imgur.com/gF6IpwW.png">
                         <div class="dishes-formula" data-aos="fade-left">
@@ -63,13 +90,6 @@
                                 Запікайте в духовці 10-15 хвилин.
                             </p>
                         </div>
-                    </div>
-                    <div class="dishes-video" data-aos="zoom-in">
-                        <iframe width="637" height="358"
-                            src="https://www.youtube.com/embed/KqkJdMa8Dec?si=8LI3nXfaAiHdiydi" 
-                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                        </iframe>
                     </div>
                 </div>
             </div>
@@ -103,6 +123,20 @@
                 </address>
             </div>
         </footer><!--/Footer-->
+        <div class="modal">
+            <div class="modal__inner">
+                <button class="close-modal">
+                    <img width="25px" src="../HalloweenWeb/img/close.png">
+                </button>
+                <iframe class="iframe-video"
+                    src="https://www.youtube.com/embed/KqkJdMa8Dec?si=8LI3nXfaAiHdiydi" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <script src="../HalloweenWeb/js/modalDishes.js"></script>
+        <script src="../HalloweenWeb/js/mobileMenu.js"></script>
         <script src="../HalloweenWeb/js/app.js"></script>
         <script src="../HalloweenWeb/js/header.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

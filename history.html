@@ -101,8 +101,13 @@
                     <p data-aos="fade-up">
                         Як і інші свята, Хелловін має свої відомі пісні та тематичну музику. Широко відома пісня «Monster Mash» поп-музиканта Боббі Пікетта стала, на думку ряду музичних критиків, своєрідним гімном Хелловіну
                     </p>
-                    <div class="dishes-video" data-aos="zoom-in">
-                        <iframe width="637" height="358"
+                    <div class="container-btn">
+                        <button id="btn-video1" class="btn-img monster-btn" type="button">
+                            <img class="article__img btn" src="../HalloweenWeb/img/monster_mash.jpg">
+                        </button>
+                    </div>
+                    <div class="section-video" data-aos="zoom-in">
+                        <iframe class="iframe-video"
                             src="https://www.youtube.com/embed/5OsF1kIEHaQ?si=Jf72KCVQJqEL8d33" 
                             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
@@ -111,11 +116,17 @@
                     <p data-aos="fade-up">
                         Іншою дуже популярною піснею є композиція «This Is Halloween», написана Денні Ельфманом. Вона увійшла до саундтреку анімаційного фільму «Жах перед Різдвом» і неодноразово була переспівана різними не лише американськими, але і японськими виконавцями
                     </p>
-                    <div class="dishes-video" data-aos="zoom-in">
-                        <iframe width="637" height="358"
-                            src="https://www.youtube.com/embed/OmBIatBgAMk?si=OgrQpJ2liFhRoJ14" 
-                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    <div class="container-btn">
+                        <button id="btn-video2" class="btn-img halloween-btn" type="button">
+                            <img class="article__img btn" src="../HalloweenWeb/img/this_is_halloween.jpg">
+                        </button>
+                    </div>
+                    <div class="section-video" data-aos="zoom-in">
+                        <iframe class="iframe-video"
+                                src="https://www.youtube.com/embed/OmBIatBgAMk?si=OgrQpJ2liFhRoJ14" 
+                                title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                         </iframe>
                     </div>
                     <h2 data-aos="fade-up">
@@ -186,6 +197,31 @@
                 </address>
             </div>
         </footer><!--/Footer-->
+        <div id="modal1" class="modal">
+            <div class="modal__inner">
+                <button id="close-modal1" class="close-modal">
+                    <img width="25px" src="../HalloweenWeb/img/close.png">
+                </button>
+                <iframe class="iframe-video"
+                    src="https://www.youtube.com/embed/5OsF1kIEHaQ?si=Jf72KCVQJqEL8d33" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <div id="modal2" class="modal">
+            <div class="modal__inner">
+                <button id="close-modal2" class="close-modal">
+                    <img width="25px" src="../HalloweenWeb/img/close.png">
+                </button>
+                <iframe class="iframe-video"
+                    src="https://www.youtube.com/embed/OmBIatBgAMk?si=OgrQpJ2liFhRoJ14" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <script src="../HalloweenWeb/js/modalHistory.js"></script>
         <script src="../HalloweenWeb/js/mobileMenu.js"></script>
         <script src="../HalloweenWeb/js/header.js"></script>
         <script src="../HalloweenWeb/js/modalTrailer.js"></script>

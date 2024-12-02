@@ -1016,6 +1016,29 @@ article h2::before {
     width: 100%;
 }
 
+.container-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-img {
+    display: none;
+    position: relative;
+    z-index: 10;
+    border: none;
+    background: none;
+    transition: transform 0.2s;
+}
+
+.btn-img:active {
+    transform: scale(0.9);
+}
+
+.btn {
+    border-radius: 25px;
+}
+
 /*dishes==============*/
 
 .dishes-main {
@@ -1038,7 +1061,7 @@ article h2::before {
     top: 0;
     left: 0;
     transition: all .2s ease;
-    opacity: 0.3;
+    opacity: 0.4;
     background-color: #f69300;
 }
 
@@ -1130,7 +1153,14 @@ article h2::before {
     justify-content: center;
 }
 
-
+.content-title {
+    position: relative;
+    z-index: 100;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    top: 120px;
+}
 
 /*dishes-content==============*/
 
@@ -1152,29 +1182,60 @@ article h2::before {
 
 .dishes-formula p {
     color: wheat;
-
 }
-
-
-
 
 .dishes-content {
     margin-bottom: 20px;
 }
 
 .dishes-img-content {
-    width: 600px;
+    width: 100%;
     max-height: 500px;
     border-radius: 25px;
     object-fit: cover;
 }
 
-.dishes-video {
+.section-video {
+    display: block;
     width: 100%;
     position: relative;
     z-index: 100;
     text-align: center;
     margin-bottom: 20px;
+}
+
+
+
+
+.btn-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 50%;
+    height: 100px;
+    color: white;
+    font-size: 25px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 25px;
+    position: relative;
+    z-index: 100;
+    background-color: #151413;
+
+    margin-bottom: 30px;
+    padding: 7px;
+    
+}
+
+
+.btn-video:hover {
+    background-color: #0d0d0c;
+}
+
+
+.btn-video:active {
+    background-color: #000000;
 }
 
 
@@ -1277,7 +1338,23 @@ article h2::before {
         height: 450px;
     }
     
+    .dishes-content {
+        flex-direction: column;
+    }
+    .dishes-formula {
+        margin-top: 25px;
+    }   
+    .dishes-main__inner {
+        justify-content: center;
+    }
 
+    .btn-img {
+        display: block;
+    }
+
+    .section-video {
+        display: none;
+    }
   }
 
 
@@ -1297,6 +1374,15 @@ article h2::before {
         justify-content: center;
     }
 
+    .dishes-content {
+        flex-direction: column;
+    }
+    .dishes-formula {
+        margin-top: 25px;
+    } 
+    
+    
+    
 
 }
 
