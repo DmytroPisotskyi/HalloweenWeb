@@ -1400,12 +1400,13 @@ article h2::before {
     } 
     
     .section {
-        background-image: url(../img/about.jpeg);
+        background-image: url(../img/section_backgroung.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         position: relative;
         z-index: 100;
+        background-position: left calc((50vw - 170px) - 1000px) top;
     }
     
     .section .video__media {
