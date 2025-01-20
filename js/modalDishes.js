@@ -7,12 +7,15 @@ const closeModal = document.querySelector('.close-modal');
 
 function openTrailer() {
     modal.classList.add('active-modal');
+    document.body.appendChild(modal)
+
 
     localStorage.setItem('openTrailer', 'true')
 }
 
 function closeTrailer() {
     modal.classList.remove('active-modal');
+    document.body.removeChild(modal)
 
     localStorage.setItem('openTrailer', 'false')
 }
