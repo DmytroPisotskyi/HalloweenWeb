@@ -47,7 +47,7 @@ body {
 }
 
 .w-bg {
-    background-image: url(../img/about.jpeg);
+    background-image: url(./img/about.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -190,7 +190,7 @@ a {
     top: 0;
     padding-top: 20px;
     /*background-color: #f69300;*/
-    background-image: url(../img/bg_mobile_menu.jpg);
+    background-image: url(./img/bg_mobile_menu.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
