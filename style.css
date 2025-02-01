@@ -526,7 +526,7 @@ a {
     position: relative;
     z-index: 1;
     flex: 1;
-    background-image: url('https://i.imgur.com/IOcU1ZS.jpg');
+    background-image: url('./img/filmBG.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
@@ -1076,7 +1076,7 @@ article h2::before {
     position: relative;
     z-index: 1;
     flex: 1;
-    background-image: url(https://i.imgur.com/yzfPGrh.jpg);
+    background-image: url(./img/bgDishes.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
