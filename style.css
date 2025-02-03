@@ -290,7 +290,7 @@ a {
     overflow: hidden;
 
 
-    background-image: url(../img/about.jpeg);
+    background-image: url(./img/about.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
