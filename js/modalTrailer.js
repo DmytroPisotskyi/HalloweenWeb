@@ -1,6 +1,6 @@
 
 /*openTrailer, closeTrailer and fixed modal*/
-const modal = document.querySelector('.modal');
+/*const modal = document.querySelector('.modal');
 const clickTrailer = document.querySelector('.link-trailer');
 const closeModal = document.querySelector('.close-modal');
 
@@ -30,12 +30,24 @@ window.onload = function() {
 };
 
 clickTrailer.addEventListener('click', openTrailer);
-closeModal.addEventListener('click', closeTrailer);
+closeModal.addEventListener('click', closeTrailer);*/
 
 
 
+  const clickTrailer = document.querySelector('.link-trailer');
+  const urlTrapler = document.getElementById('url')
+  const dataSrc = urlTrapler.dataset.src;
+  console.log(dataSrc);
+  
 
-
-
-
+  clickTrailer.addEventListener('click', ()=> {
+    Fancybox.show([
+        {
+          src: dataSrc,
+          width: 640,
+          height: 360,
+        },
+      ]);
+    
+  })
 

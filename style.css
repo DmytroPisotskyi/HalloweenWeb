@@ -168,43 +168,50 @@ a {
 }
 
 /*mobile-menu=====================*/
-.header__button {
+.header__button-open,
+.header__button-close {
     background: none;
     border: none;
     padding: 10px;
     font: inherit;
     color: white;
-    transition: transform 0.25s;
+    /*transition: transform 0.25s;*/
 }
 
-.header__button:focus {
+/*.header__button:focus {
     transform: scale(0.55)
-}
+}*/
 
+.inactive {
+    display: none;
+}
 
 
 .mobile-menu {
     width: 100%;
-    height: 600px;
+    height: 100vh; /*було 600px*/
     position: fixed;
     top: 0;
     padding-top: 20px;
     /*background-color: #f69300;*/
-    background-image: url(./img/bg_mobile_menu.jpg);
-    background-size: cover;
+    /*background-image: url(./img/bg_mobile_menu.jpg);*/
+    background-image: url(./img/section_backgroung.jpg);
+    
     background-repeat: no-repeat;
     background-position: center;
     transform: translateX(-100%);
-    transition: transform 0.3s linear;
-    
+    transition: transform 0.3s linear; 
+    z-index: 3;
 }
+
 
 
 .mobile-menu-open {
-    transform: translateX(0); 
+    transform: translateX(-50%); /*було 0*/
 }
 
 .mobile-menu__list {
+    padding-left: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -213,7 +220,10 @@ a {
     text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
 }
 
+
+
 .mobile-menu__content {
+    padding-left: 50%;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -1101,6 +1111,11 @@ article h2::before {
     flex-wrap: wrap;
 }
 
+.dishes-block {
+    color: #f5deb3;
+    text-decoration: underline;
+    display: inline;
+}
 
 .dishes-main__item {
     width: 200px;

@@ -13,6 +13,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
         <link rel="manifest" href="./img/favicon/webmanifest.json">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <title>Хелловін</title>
     </head>
@@ -42,15 +43,20 @@
                             <a href="./about.html" class="nav__link">Про сайт</a>
                         </li>
                     </ul>
-                    <button class="header__button" type="button">
-                        <img src="./img/menu-bar.png" width="50px">
-                    </button>
+                    <div class="header__button">
+                        <button class="header__button-open" type="button">
+                            <img class="burger_menu " src="./img/menu-bar.png" width="40px">
+                        </button>
+                        <button class="header__button-close inactive">
+                            <img class="close_menu " src="./img/closeMenu.png" width="40px">
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="mobile-menu">
-                <button class="mobile-menu__close" type="button">
+                <!--<button class="mobile-menu__close" type="button">
                     <img src="./img/close.png" width="35px">
-                </button>
+                </button>-->
                 <nav class="mobile-menu__list">
                     <div class="div-link">
                         <a class="mobile-menu__link" href="./film.html">Фільми</a>
@@ -66,7 +72,12 @@
                     </div>
                 </nav>
                 <div class="mobile-menu__content">
-                    <h2>Веселого Хелловіну!</h2>
+                    <!--<img src="./img/upFooterImg.gif" width="150px">-->
+                    <div class="logo_container">
+                        <a class="logo-link" href="./index.html">
+                            <img src="./img/logo_2.png" alt="logo" height="80px">
+                        </a>
+                    </div>
                 </div>
             </div>
         </header><!--/Header-->
@@ -77,6 +88,7 @@
                     <div class="dishes-content">
                         <img data-aos="fade-right" class="dishes-img-content" src="./img/food/food8.png">
                         <div class="dishes-formula" data-aos="fade-left">
+                            <a href="javascript:void(0);" class="link-trailer dishes-block" id="url" data-src="https://www.youtube.com/embed/wvU6TtXWXPA?si=x2ynHNSl8itLxzxT">Дивитись приготування</a>
                             <ul>
                                 <li>- білий шоколад.</li>
                                 <li>- кокосова олія (можна замінити на вершкове масло).</li>
@@ -92,9 +104,6 @@
                             </p>
                         </div>
                     </div>
-                    <button class="btn-video">
-                        Дивитись Приготування
-                    </button>
                 </div>
             </div>
         </div>
@@ -102,7 +111,7 @@
             <div class="footer__geo">
                 <h4>
                     Ukraine, Poltava<br>
-                    2024
+                    <p class="date-time"></p>
                 </h4>
             </div>
             <div class="logo_container-footer">
@@ -127,22 +136,12 @@
                 </address>
             </div>
         </footer><!--/Footer-->
-        <div class="modal">
-            <div class="modal__inner">
-                <button class="close-modal">
-                    <img width="25px" src="./img/close.png">
-                </button>
-                <iframe class="iframe-video"
-                    src="https://www.youtube.com/embed/wvU6TtXWXPA?si=x2ynHNSl8itLxzxT" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                </iframe>
-            </div>
-        </div>
         <script src="./js/mobileMenu.js"></script>
-        <script src="./js/modalDishes.js"></script>
+        <script src="./js/modalTrailer.js"></script>
         <script src="./js/app.js"></script>
         <script src="./js/header.js"></script>
+        <script src="./js/date.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
