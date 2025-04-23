@@ -953,10 +953,6 @@ a {
 }
 
 
-.iframe-video {
-    width:1000px; 
-    height: 562px;
-}
 
 
 .close-modal:hover {
@@ -1076,6 +1072,13 @@ article h2::before {
 
 .btn {
     border-radius: 25px;
+}
+
+
+.link-song span{
+    text-decoration: underline;
+    font-weight: 700;
+    
 }
 
 /*dishes==============*/
@@ -1378,10 +1381,7 @@ article h2::before {
         overflow: hidden;
         transition: all 0.2s ease;
     }
-    .iframe-video {
-        width: 400px; 
-        height: 450px;
-    }
+    
     
     .dishes-content {
         flex-direction: column;
@@ -1397,9 +1397,9 @@ article h2::before {
         display: block;
     }
 
-    .section-video {
+    /*.section-video {
         display: none;
-    }
+    }*/
     .span-item {
         flex-wrap: wrap;
         display: flex;

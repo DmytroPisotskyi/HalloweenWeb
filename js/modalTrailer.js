@@ -34,11 +34,11 @@ closeModal.addEventListener('click', closeTrailer);*/
 
 
 
-  const clickTrailer = document.querySelector('.link-trailer');
-  const urlTrapler = document.getElementById('url')
-  const dataSrc = urlTrapler.dataset.src;
-  console.log(dataSrc);
-  
+
+const clickTrailer = document.querySelector('.link-trailer');
+const urlTrapler = document.getElementById("url")
+const dataSrc = urlTrapler.dataset.src;
+
 
   clickTrailer.addEventListener('click', ()=> {
     Fancybox.show([

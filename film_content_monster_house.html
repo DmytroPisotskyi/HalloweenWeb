@@ -18,6 +18,28 @@
         <title>Хелловін</title>
     </head>
     <body>
+        <script type="module">
+            import Movie from "./js/classMovie.js";
+
+        const apiKey = 'fa0e9ab8';
+        const movieTitle = 'monster_house';
+
+        fetch(`https://www.omdbapi.com/?t=${movieTitle}&apikey=${apiKey}`)
+            .then(response => response.json())
+            .then(data => {
+                
+                
+                const movie = new Movie(data.Title, 
+                    data.Year, data.Rated, data.Released, data.Runtime, 
+                    data.Genre, data.Director, data.Poster, data.imdbRating)
+
+                movie.renderMovieInfo()
+            })
+
+            .catch(error =>{
+                console.error('error:', error)
+            })
+        </script>
         <header class="header no-scroll" data-aos="fade-down">
             <div class="container">
                 <div class="header__inner">
@@ -179,7 +201,6 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script type="module" src="./js/classMovie.js"></script>
         <script src="./js/date.js"></script>
-        <script type="module" src="./js/movieMonsterHouse.js"></script>
         <script>
             AOS.init();
           </script>

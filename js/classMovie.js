@@ -14,7 +14,6 @@ export default class Movie {
     }
 
     renderMovieInfo() {
-
         const filmPoster = document.querySelector('.film-poster');
         filmPoster.src = this.Poster
 
