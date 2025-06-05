@@ -1,9 +1,15 @@
-"use strict";
+/*gallery*/
+declare const Fancybox: any
+
 document.addEventListener('DOMContentLoaded', () => {
     const linkScreen = document.querySelectorAll('.link-screen-film');
-    Fancybox.bind('[data-fancybox="gallery"]', {});
+
+    Fancybox.bind('[data-fancybox="gallery"]', {
+    });
+
     linkScreen.forEach(link => {
-        link.addEventListener('click', (event) => {
+        link.addEventListener('click', (event) => {   
         });
     });
+
 });
