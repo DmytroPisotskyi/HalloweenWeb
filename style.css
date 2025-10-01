@@ -502,11 +502,7 @@ a {
     z-index: 1000;
 }
 
-.footer__geo h4 {
-    color: #fff;
-    text-align: center;
-    font-size: 20px;
-}
+
 
 .footer__autor h4 {
     color: #fff;
@@ -973,14 +969,14 @@ a {
     position: relative;
     
     /*background-image: url(https://i.imgur.com/DOf0Awp.jpg);*/
-    background-image: url(../img/about.jpeg);
+    background-image: url(./img/about.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 .about-bg {
-    background-image: url(../img/about.jpeg);
+    background-image: url(./img/about.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -1310,9 +1306,7 @@ article h2::before {
         justify-content: center;
     }
 
-    .footer__geo {
-        display: none;
-    }
+
     .logo_container-footer {
         display: none;
     }
